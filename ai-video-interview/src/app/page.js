@@ -11,8 +11,8 @@ import { io } from 'socket.io-client';
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:5000';
 
 const questions = [
-  "Tell me about a challenging technical problem you solved recently. What was your approach?",
-  "Why do you want to work with our team, and what value do you bring to this role?",
+  "Tell me about yourself?",
+  "Why do you want to work with our team?",
   "Explain the difference between asynchronous processing and synchronous processing in software development."
 ];
 
