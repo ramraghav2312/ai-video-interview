@@ -147,7 +147,7 @@ async function cleanupChunks(s3Keys) {
 // Post completed results back to server so dashboard can show them
 async function postResultToServer(sessionId, transcript, videoUrl) {
   try {
-    const res = await fetch(`http://localhost:${process.env.PORT || 5000}/api/session-result`, {
+    const res = await fetch(`${process.env.SERVER_INTERNAL_URL}/api/session-result`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ sessionId, transcript, videoUrl, score: 75 }),
